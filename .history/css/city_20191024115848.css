@@ -1,0 +1,75 @@
+.city-ul{
+  column-count: 2;
+  font-family: 'Raleway', sans-serif;
+ }
+ .city-ul li {
+  list-style: none;
+  padding: 10px;
+ }
+ .city-ul a{
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+ }
+ .city-ul a:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(233, 233, 81);
+ }
+ /*
+ label{
+  font-family: 'Raleway', sans-serif;
+ }*/
+ / css del dropdown  teatros/
+ input[type=text], select {
+  width: 160px;
+  padding: 12px 12px;
+  margin: 8px 2px;
+  display: inline-block;
+  border: 1px ;
+  border-radius: 4px;
+  box-sizing: border-box;
+ }
+ .ciudad{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: white;
+ }
+ .accion{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: white;
+ }
+ /*
+ .popupciudad {
+   border-radius: 5px;
+ }*/
+  .ciudades{
+    background-color:#222222;
+    width: 100%;
+  }
+  .ciudadTeatro{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    padding: 0px 120px;
+ }
+  .menu_ciudades {
+    background-color:#222222;
+    margin:0 auto;
+    max-width: 1090px;
+    display: flex;
+  }
+  .miclaseprueba{
+    background-color: black;
+    margin-top: 10px;
+  margin-bottom: 10px;
+  }
+ #cambiarCiudad{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: rgb(172, 163, 163);
+  text-decoration: none;
+  margin-left: 10px;
+  }

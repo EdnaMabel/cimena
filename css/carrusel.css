@@ -1,0 +1,39 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: black;
+	width: 200px;
+	height: 400px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.carousel__container {
+	overflow: hidden;
+	height: 400px;
+}
+
+.carousel__item{
+	cursor: pointer;
+}
+.carousel__item > img{
+	height: 90% !important;
+}
+
+.link-cartelera-prev{
+	float: left;
+	margin-top: -220px;
+}
+.link-cartelera-next{
+	float: right;
+	margin-top: -220px;
+}
+
+.ul-carrusel{
+	list-style: none;
+}

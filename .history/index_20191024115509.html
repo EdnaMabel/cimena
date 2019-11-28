@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="iconos/css/fontello.css">
+    <link rel="stylesheet" href="css/menu2.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/city.css">
+    <link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/sillas_cine.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Raleway" rel="stylesheet">
+    <title>Home | Cinema BIT</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_1">
+            <img style="flex-grow: 1" src="imagenes/logo.png" class="img-logo">
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu"></label>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu"></label>
+
+            <nav style="flex-grow: 8" class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="categorias/categorias.html">GENEROS</a></li>
+                    <li><a href="confiteria/confiteria.html">COMBOS</a></li>
+                    <li><a href="sobreNosotras/sobrenosotras.html">NOSOTRAS</a></li>
+                    <li class="login" id="loginUser"></li>
+                </ul>
+            </nav>
+
+            <div style="flex-grow: 1">
+                <img id="login" class="imgLogin" src="imagenes/login.png" alt="inicioSesion">
+                <img id="login" class="imgLogin" src="imagenes/register.png" alt="registro">
+            </div>
+        </div>
+
+        <div class="ciudades">
+                <div class="ciudadTeatro">
+                    <label
+                        style="border-right-width: 5px; border-right-style: solid; padding-right: 10px; border-right-color: red;"
+                        class="ciudad">ciudad</label>
+                    <a href="#" id="cambiarCiudad">Cambia tu ciudad</a>
+                    <label class="accion" for="teatro">Selecciona tu teatro</label>
+                    <select id="Seleccionar-Teatros"></select>
+                    <div id="new_chairs"></div>
+                    <input type="hidden" id="total" value="0" />
+                    <div class="ticket_value"></div>
+                </div>
+            </div>
+    </header>
+
+    <main>
+        <div class="overlay active" id="overlay">
+            <div class="popup" id="popup">
+                <a onclick="cerrarPopup();" id="btn-cerrar-popup" class="btn-cerrar-popup"><i
+                        class="icon-cancel-1"></i></a>
+
+                <div class="slider">
+
+                    <li>
+                        <input type="radio" id="bSradioPublicidad1" name="sradioPublicidad" checked>
+                        <label for="bSradioPublicidad1"></label>
+                        <img src="imagenes/galeria estrenos/malefica.jpg" alt="Obra1" class="responsive">
+                    </li>
+
+                    <li>
+                        <input type="radio" id="bSradioPublicidad2" name="sradioPublicidad">
+                        <label for="bSradioPublicidad2"></label>
+                        <img src="imagenes/galeria estrenos/terminator1.jpg" alt="Obra2" class="responsive">
+                    </li>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Publicidad -->
+
+        <!-- Inicio Vídeo -->
+        <div class="contenedor_video">
+            <section class="video">
+                <video width="100%" controls>
+                    <source src="
+                    ../Cinema/videos/Malfica_Duea_del_Mal_de_Disney__Nuevo_triler_oficial_Subtitulado(youtube.com).mp4">
+                    </source>
+                </video>
+            </section>
+         </div>
+        <!-- Fin Vídeo -->
+
+        <!-- Inicio Contenido -->
+        <div class="wrap">
+            <div style=" height: 10px; background-color:#DFA50C;"></div>
+            <div class="content_wrap">
+
+                <section class="section">
+                    <h3>EN CARTELERA</h3>
+                    <div class="carousel">
+                        <div class="carousel__container">
+
+                            <ul class="ul-carrusel">
+                                <li id="slide1">
+                                    <div class="flex-container">
+                                        <div class="carousel__item" onclick="paintCinemaChairs()">
+                                            <img src="imagenes/galeria_cartelera/guason1.jpg" alt="Guason" width="200px"
+                                                height="200px">
+                                        </div>
+                                        <div class="carousel__item" onclick="paintCinemaChairs()">
+                                            <img src="imagenes/galeria_cartelera/elcoco3.jpg" alt="Guason" width="200px"
+                                                height="200px">
+                                        </div>
+                                        <div class="carousel__item" onclick="paintCinemaChairs()">
+                                            <img src="imagenes/galeria_cartelera/mellevarasenti.jpg" alt="Guason"
+                                                width="200px" height="200px">
+                                        </div>
+                                        <div class="carousel__item" onclick="paintCinemaChairs()">
+                                            <img src="imagenes/galeria_cartelera/midsommar.jpg" alt="Guason"
+                                                width="200px" height="200px">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li id="slide2">
+                                    <div class="flex-container">
+                                        <div class="carousel__item" onclick="paintCinemaChairs()">
+                                            <img src="imagenes/galeria_cartelera/proyege.png" alt="Guason" width="200px"
+                                                height="200px">
+                                        </div>
+                                        <div class="carousel__item" onclick="paintCinemaChairs()">
+                                            <img src="imagenes/galeria_cartelera/unamigo.jpg" alt="Guason" width="200px"
+                                                height="200px">
+                                        </div>
+                                        <div class="carousel__item" onclick="paintCinemaChairs()">
+                                            <img src="imagenes/galeria_cartelera/unviaje.jpg" alt="Guason" width="200px"
+                                                height="200px">
+                                        </div>
+                                        <div class="carousel__item" onclick="paintCinemaChairs()">
+                                            <img src="imagenes/galeria_cartelera/elcoco3.jpg" alt="Guason" width="200px"
+                                                height="200px">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="ul-carrusel">
+                            <li class="link-cartelera-prev"><a href="#slide1">
+                                    <img src="imagenes/back.png" alt="" srcset="">
+                                </a></li>
+                            <li class="link-cartelera-next"><a href="#slide2">
+                                    <img src="imagenes/next.png" alt="" srcset="">
+                                </a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h3>PROXIMOS ESTRENOS</h3>
+                    <ul class="slider-portada">
+                        <li>
+                            <input type="radio" id="sbutton1" name="sradio" checked>
+                            <label for="sbutton1"></label>
+                            <img src="imagenes/galeria estrenos/malefica.jpg" alt="estreno1" class="responsive"
+                                width="960" height="465">
+                        </li>
+
+                        <li>
+                            <input type="radio" id="sbutton2" name="sradio">
+                            <label for="sbutton2"></label>
+                            <img src="imagenes/galeria estrenos/proyectoge.jpg" alt="estereno2" class="responsive"
+                                width="960" height="465">
+                        </li>
+
+                        <li>
+                            <input type="radio" id="sbutton3" name="sradio">
+                            <label for="sbutton3"></label>
+                            <img src="imagenes/galeria estrenos/guason.jpg" alt="estreno3" class="responsive"
+                                width="960" height="465">
+                        </li>
+
+                        <li>
+                            <input type="radio" id="sbutton4" name="sradio">
+                            <label for="sbutton4"></label>
+                            <img src="imagenes/galeria estrenos/terminator1.jpg" alt="estreno4" class="responsive"
+                                width="960" height="465">
+                        </li>
+                        <li>
+                            <input type="radio" id="sbutton4" name="sradio">
+                            <label for="sbutton4"></label>
+                            <img src="imagenes/galeria estrenos/locosada.jpg" alt="estreno5" class="responsive"
+                                width="960" height="465">
+
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h3>PREVENTA</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-item g-item-1">
+                            <span></span>
+                        </div>
+                        <div class="gallery-item g-item-2">
+                            <span> </span>
+                        </div>
+                        <div class="gallery-item g-item-3">
+                            <span></span>
+                        </div>
+                        <div class="gallery-item g-item-4">
+                            <span></span>
+                        </div>
+
+                        <div class="gallery-item g-item-5">
+                            <span></span>
+                        </div>
+                        <div class="gallery-item g-item-6">
+                            <span></span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Fin Contenido -->
+    </main>
+
+    <footer>
+            <div class="flex-container-f">
+                <div style="width: 30%;" class="title-footer" >
+                    <h4 class="woman">WOMAN </h4>
+                    <h4 class="coding">CODING</h4>
+                    <h4 class="boot">BOOTCAMPP</h4>
+                </div>
+                <div class="icon" style="width: 60%;">
+                    <a href="https://www.facebook.com/cinemabitgirls/" target="_blank" > <img class="redes-sociales"  src="imagenes/iconos/facebook (1).png" alt="facebook"> </a>
+                    <a href="https://www.instagram.com/cinema.bit/" target="_blank"> <img class="redes-sociales" src="imagenes/iconos/instagram.png" alt="instagram"></a>
+                    <a href="https://twitter.com/bit_cinema/" target="_blank"> <img class="redes-sociales" src="imagenes/iconos/twitter (1).png"twitter"></a>
+                </div>
+                <div style="width: 30%;">
+                    <h5>Bogotá Instite of Technology</h5>
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7314131875887!2d-74.0671978857357!3d4.6419275966280065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9abf01007c8b%3A0xf34837fe0c5507db!2sBIT%20-%20Cursos%20de%20Programaci%C3%B3n%20en%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1571761182117!5m2!1ses!2sco"
+                    height="100px" width="300px" frameborder="0" style="border:0;" allowfullscreen="">
+                </iframe>
+                </div>
+            </div>
+        </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/cinema.js"></script>
+    <script src="js/city.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/sillas_cine.js" > </script>
+</body>
+
+</html>

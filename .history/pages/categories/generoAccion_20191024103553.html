@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../iconos/css/fontello.css">
+    <link rel="stylesheet" href="../../css/menu2.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Raleway" rel="stylesheet">
+    <title>Home | Cinema BIT</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header_1">
+            <img style="flex-grow: 1" src="../../imagenes/login.png" class="img-logo">
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu"></label>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu"></label>
+
+            <nav style="flex-grow: 8" class="menu">
+                <ul>
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="../../index.html">GENEROS</a></li>
+                    <li><a href="../../pages/confiteria.html">COMBOS</a></li>
+                    <li><a href="../../pages/sobrenosotras.html">NOSOTRAS</a></li>
+                    <li class="login" id="loginUser"></li>
+                </ul>
+            </nav>
+
+            <div style="flex-grow: 1">
+                <img id="login" class="imgLogin" src="../../imagenes/login.png" alt="inicioSesion">
+                <img id="login" class="imgLogin" src="../../imagenes/register.png" alt="registro">
+            </div>
+        </div>
+
+        <div class="ciudades">
+            <div class="ciudadTeatro">
+                <label
+                    style="border-right-width: 5px; border-right-style: solid; padding-right: 10px; border-right-color: red;"
+                    class="ciudad">ciudad</label>
+                <label class="accion" for="teatro">Selecciona tu teatro</label>
+                <select id="teather" name="theater">
+                    <option value="1">Gran Estación</option>
+                    <option value="2">El Tesoro</option>
+                    <option value="3">Las Américas</option>
+                </select>
+                <div id="new_chairs"></div>
+                <input type="hidden" id="total" value="0" />
+                <div class="ticket_value"></div>
+            </div>
+        </div>
+    </header>
+
+    <footer>
+        <div class="flex-container-f">
+            <div style="width: 30%;">
+                <h4>Woman coding Bootcampp</h4>
+            </div>
+            <div class="icon" style="width: 60%;">
+                <img style="padding: 10px;" src="imagenes/iconos/facebook.png" alt="facebook">
+                <img style="padding: 10px;" src="../Cinema/imagenes/iconos/instagram (1).png" alt="instagram">
+                <img style="padding: 10px;" src="../Cinema/imagenes/iconos/twitter.png" alt="twitter">
+            </div>
+            <div style="width: 30%;">
+                <h4>Bogotá Instite of Technology</h4>
+            </div>
+        </div>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../../js/cinema.js"></script>
+    <script src="../../js/city.js"></script>
+    <script src="../../js/login.js"></script>
+    <script src="../../js/sillas_cine.js"> </script>
+</body>
+
+</html>

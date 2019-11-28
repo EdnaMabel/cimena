@@ -1,0 +1,154 @@
+.swal-sillas {
+  width: 90% !important;
+  
+}
+
+.cinema {
+  margin: 5% 5% 5% 5%;
+  text-align: center;
+}
+
+.ticket_value {
+  margin-top: 20px;
+  font-size: 20px;
+  
+}
+
+.table_chairs {
+  width: 100%;
+}
+
+.name-row {
+  width: 1%;
+}
+
+.name-row > div {
+  border: 2px solid salmon;
+  border-radius: 30%;
+  /*width: 50%;*/
+  text-align: center;
+  font-weight: bold;
+}
+
+.chair-row {
+  width: 1%;
+  text-align: center;
+}
+
+.used-chair {
+  background-color: #a4a4a4;
+}
+
+.available-chair {
+  background-color: #00ff00;
+}
+
+.middle-row {
+  width: 1%;
+}
+
+.combos{
+  width:95%;
+  background:rgb(196, 191, 191);
+  margin:auto;
+  padding:15px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 15px;
+  grid-template-areas: 
+                      "mega-Combo combomediano"
+                      "combosencillo combito";
+  
+}
+
+.combos .mega-Combo,
+.combomediano,
+.combosencillo,
+.combito{
+  
+  
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 5px;
+  cursor: pointer;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.combos h3{
+  color:white;
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-left: 25px;
+}
+
+.contenido ul li{
+text-align: left;
+color:white;
+font-size: 18px;
+margin-left: 30px;
+padding: 3px;
+
+
+
+
+
+}
+.estilos img{
+  width:100%;
+ /* background:white ; */
+ 
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+  
+}
+.contenido{
+  margin-top: 0;
+  width:70%;
+  background: rgb(56, 42, 82);
+  border-radius: 20px;
+  margin-top: -5px;
+  padding-top: 5px;
+  margin-left: 60px;
+}
+
+.table_combos{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  padding: 30px;
+  margin-right: 0;
+  margin-inline-start: 40px;
+ }
+ .descripcion{
+  width:65%;
+ }
+ .descripcionvalor{
+  width:30%;
+ }
+ .valorTotal{
+  font-size: 25px;
+  color:red;
+ }
+ .swal {
+   font-family: sans-serif;
+ }
+
+@media screen and (max-width:500px){
+  .combos{
+    width:100%;
+    flex-wrap: wrap;
+  }
+}
